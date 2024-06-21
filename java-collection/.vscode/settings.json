@@ -3,5 +3,7 @@
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
         "lib/**/*.jar"
-    ]
+    ],
+    "explorer.fileNesting.expand": true,
+    "explorer.compactFolders": false
 }
