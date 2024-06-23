@@ -1,6 +1,6 @@
 package ListOrdenacao;
 
-public class Pessoa {
+public class Pessoa implements Comparable<Pessoa> {
 
     private String nome;
     private int idade;
@@ -10,6 +10,11 @@ public class Pessoa {
         this.nome = nome;
         this.idade = idade;
         this.altura = altura;
+    }
+
+    @Override
+    public int compareTo(Pessoa p) {
+       return Integer.compare(idade, p.getIdade());
     }
 
     public String getNome() {
@@ -38,10 +43,9 @@ public class Pessoa {
 
     @Override
     public String toString() {
-        return "Pessoa [nome=" + nome + ", idade=" + idade + ", altura=" + altura + "]";
+        return "Pessoa = nome: " + nome
+        + ", idade: " + idade
+        + ", altura: " + altura + "\n";
     }
 
-    
-    
-    
 }
