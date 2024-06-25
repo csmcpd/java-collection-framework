@@ -1,4 +1,4 @@
-import List.OperacoesBasicas.ListaTarefa;
+import ListTutorial.OperacoesBasicasList.OperacoesBasicas.ListaTarefa;
 
 public class App {
     public static void main(String[] args) throws Exception {
