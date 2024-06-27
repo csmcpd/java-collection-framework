@@ -25,6 +25,7 @@ public class CadastroProdutos {
     public Set<Produto> exibirProdutosPorPreco() {
         Set<Produto> produtoPreco = new TreeSet<>(new ComparatorPorPreco());
 
+        produtoPreco.addAll(produtoSet);
         return produtoPreco;
     }
 }
