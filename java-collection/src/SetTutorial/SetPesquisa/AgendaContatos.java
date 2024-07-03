@@ -11,14 +11,24 @@ public class AgendaContatos {
         this.contatoSet = new HashSet<>();
     }
 
+    /*
+     * Adiciona um contato à agenda.
+     */
     public void adicionarContato(String nome, long numero) {
         contatoSet.add(new Contato(nome, numero));
     }
 
+    /*
+     * Exibe todos os contatos da agenda.
+     */
     public void exibirContatos() {
         System.out.println(contatoSet);
     }
 
+    /*
+     * Pesquisa contatos pelo nome e retorna 
+     * um conjunto com os contatos encontrados.
+     */
     public Set<Contato> pesquisarPorNome(String nome) {
         Set<Contato> contatoPorNome = new HashSet<>();
 
@@ -31,6 +41,9 @@ public class AgendaContatos {
         return contatoPorNome;
     }
 
+    /*
+     * Atualiza o número de telefone de um contato específico.
+     */
     public Contato atualizarNumeroContato(String nome, long novoNumero) {
         Contato contatoAtualizado = null;
 

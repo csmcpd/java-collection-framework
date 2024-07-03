@@ -11,10 +11,17 @@ public class SomaNumeros {
         this.numeroList = new ArrayList<>();
     }
 
+    /*
+     * Adiciona um número à lista de números.
+     */
     public void adicionarNumero(int numero) {
         numeroList.add(new Numero(numero));
     }
 
+    /*
+     * Calcula a soma de todos os números na 
+     * lista e retorna o resultado.
+     */
     public int calcularSoma() {
         int numeroSomaTotal = 0;
 
@@ -25,6 +32,9 @@ public class SomaNumeros {
         return numeroSomaTotal;
     }
 
+    /*
+     * Encontra o maior número na lista e retorna o valor.
+     */
     public int encontrarMaiorNumero() {
         int numeroMaior = 0;
 
@@ -37,6 +47,9 @@ public class SomaNumeros {
         return numeroMaior;
     }
     
+    /*
+     * Encontra o menor número na lista e retorna o valor.
+     */
     public int encontrarMenorNumero() {
         int numeroMenor = this.calcularSoma();
 
@@ -49,6 +62,9 @@ public class SomaNumeros {
         return numeroMenor;
     }
 
+    /*
+     * Retorna uma lista contendo todos os números presentes na lista.
+     */
     public List<Numero> exibirNumeros() {
         return numeroList;
     }

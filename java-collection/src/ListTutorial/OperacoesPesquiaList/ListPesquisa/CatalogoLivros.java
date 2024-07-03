@@ -11,10 +11,16 @@ public class CatalogoLivros {
         this.livroList = new ArrayList<>();
     }
 
+    /*
+     *  Adiciona um livro ao catálogo.
+     */
     public void adicionarLivro(String titulo, String autor, int anoPublicacao) {
         livroList.add(new Livro(titulo, autor, anoPublicacao));
     }
 
+    /*
+     * Pesquisa livros por autor e retorna uma lista com os livros encontrados.
+     */
     public List<Livro> pesquisarPorAutor(String autor) {
 
         List<Livro> livrosPorAutor = new ArrayList<>();
@@ -32,6 +38,10 @@ public class CatalogoLivros {
         return livrosPorAutor;
     }
 
+    /*
+     * Pesquisa livros publicados em um determinado intervalo 
+     * de anos e retorna uma lista com os livros encontrados.
+     */
     public List<Livro> pesquisarPorIntervalosAno(int anoInicial, int anoFinal) {
 
         List<Livro> livrosPorIntervaloAnos = new ArrayList<>();
@@ -49,6 +59,9 @@ public class CatalogoLivros {
         return livrosPorIntervaloAnos;
     }
 
+    /*
+     * Pesquisa livros por título e retorna o primeiro livro encontrado.
+     */
     public Livro pesquisarPorTitulo(String titulo) {
 
         Livro livroPorTitulo = null;

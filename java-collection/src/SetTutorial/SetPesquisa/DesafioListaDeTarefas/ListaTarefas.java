@@ -11,10 +11,16 @@ public class ListaTarefas {
         this.tarefaSet = new HashSet<>();
     }
 
+    /*
+     * Adiciona uma nova tarefa ao Set.
+     */
     public void adicionarTarefa(String descricao, boolean status) {
         tarefaSet.add(new Tarefa(descricao, status));
     }
 
+    /*
+     *  Remove uma tarefa do Set de acordo com a descrição, se estiver presente.
+     */
     public void removerTarefa(String descricao) {
         Tarefa tarefaParaRemover = null;
 
@@ -28,14 +34,23 @@ public class ListaTarefas {
         tarefaSet.remove(tarefaParaRemover);
     }
 
+    /*
+     * Exibe todas as tarefas da lista de tarefas.
+     */
     public void exibirTarefas() {
         System.out.println(tarefaSet);
     }
 
+    /*
+     * Conta o número total de tarefas na lista de tarefas.
+     */
     public void contarTarefas() {
         System.out.println(tarefaSet.size());
     }
 
+    /*
+     * Retorna um Set com as tarefas concluídas.
+     */
     public Set<Tarefa> obterTarefasConcluidas() {
         Set<Tarefa> tarefaConcluida = new HashSet<>();
 
@@ -48,6 +63,9 @@ public class ListaTarefas {
         return tarefaConcluida;
     }
 
+    /*
+     * Retorna um Set com as tarefas pendentes.
+     */
     public Set<Tarefa> obterTarefasPendentes() {
         Set<Tarefa> tarefaPendente = new HashSet<>();
 
@@ -60,6 +78,9 @@ public class ListaTarefas {
         return tarefaPendente;
     }
 
+    /*
+     *  Marca uma tarefa como concluída de acordo com a descrição.
+     */
     public void marcarTarefaConcluida(String descricao) {
         if (tarefaSet.isEmpty() == false) {
             for (Tarefa tarefa : tarefaSet) {
@@ -79,6 +100,9 @@ public class ListaTarefas {
         }
     }
 
+    /*
+     * Marca uma tarefa como pendente de acordo com a descrição.
+     */
     public void marcarTarefaPendente(String descricao) {
         if (tarefaSet.isEmpty() == false) {
             for (Tarefa tarefa : tarefaSet) {
@@ -95,6 +119,9 @@ public class ListaTarefas {
         }
     }
 
+    /*
+     * Remove todas as tarefas da lista de tarefas.
+     */
     public void limparListaTarefas() {
         tarefaSet = null;
 

@@ -12,16 +12,25 @@ public class CadastroProdutos {
         this.produtoSet = new HashSet<>();
     }
 
+    /*
+     * Adiciona um produto ao cadastro.
+     */
     public void adicionarProduto(long cod, String nome, double preco, int quantidade) {
         produtoSet.add(new Produto(nome, quantidade, preco, quantidade));
     }
 
+    /*
+     * Exibe todos os produtos do cadastro em ordem alfabética pelo nome.
+     */
     public Set<Produto> exibirProdutosPorNome() {
         Set<Produto> produtoPorOrdenAlfabetica = new TreeSet<>(produtoSet);
 
         return produtoPorOrdenAlfabetica;
     }
 
+    /*
+     * Exibe todos os produtos do cadastro em ordem crescente de preço.
+     */
     public Set<Produto> exibirProdutosPorPreco() {
         Set<Produto> produtoPreco = new TreeSet<>(new ComparatorPorPreco());
 

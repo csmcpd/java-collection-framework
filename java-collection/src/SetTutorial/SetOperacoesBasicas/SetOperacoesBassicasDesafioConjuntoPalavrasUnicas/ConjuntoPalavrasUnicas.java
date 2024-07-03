@@ -11,10 +11,16 @@ public class ConjuntoPalavrasUnicas {
         this.conjuntoSet = new HashSet<Conjunto>();
     }
 
+    /*
+     * Adiciona uma palavra ao conjunto.
+     */
     public void adicionarPalavra(String palavra) {
         conjuntoSet.add(new Conjunto(palavra));
     }
 
+    /*
+     * Remove uma palavra do conjunto.
+     */
     public void removerPalavra(String palavra) {
         Conjunto palavraParaRemover = null;
 
@@ -28,6 +34,9 @@ public class ConjuntoPalavrasUnicas {
         conjuntoSet.remove(palavraParaRemover);
     }
 
+    /*
+     * Verifica se uma palavra está presente no conjunto.
+     */
     public void verificarPalavra(String palavra) {
 
         if (conjuntoSet.isEmpty() == false) {
@@ -45,6 +54,9 @@ public class ConjuntoPalavrasUnicas {
         
     }
 
+    /*
+     * Exibe todas as palavras únicas do conjunto.
+     */
     public void exibirPalavrasUnicas() {
         System.out.println(conjuntoSet);
     }
