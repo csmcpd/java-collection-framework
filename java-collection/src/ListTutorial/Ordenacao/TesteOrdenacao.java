@@ -1,4 +1,4 @@
-package ListTutorial.ListOrdenacao.BasicoOrdenacao;
+package ListTutorial.Ordenacao;
 
 public class TesteOrdenacao {
 
@@ -15,5 +15,4 @@ public class TesteOrdenacao {
         //System.out.println(ordenar.ordenarPorAltura());
         System.out.println(ordenar.ordenarPorIdade());
     }
-
 }

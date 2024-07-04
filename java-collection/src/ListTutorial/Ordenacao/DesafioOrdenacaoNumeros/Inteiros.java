@@ -1,4 +1,4 @@
-package ListTutorial.ListOrdenacao.DesafioOrdenacaoNumeros;
+package ListTutorial.Ordenacao.DesafioOrdenacaoNumeros;
 
 public class Inteiros implements Comparable<Inteiros>{
 

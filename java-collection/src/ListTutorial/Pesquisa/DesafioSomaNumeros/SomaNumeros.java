@@ -1,4 +1,4 @@
-package ListTutorial.Pesquisa.OperacoesPesquisaListDesafioSomaNumeros;
+package ListTutorial.Pesquisa.DesafioSomaNumeros;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -39,7 +39,7 @@ public class SomaNumeros {
         int numeroMaior = 0;
 
         for (Numero numero : numeroList) {
-            if (numeroMaior < numero.getNumeroInteiro()) {
+            if (numeroMaior <= numero.getNumeroInteiro()) {
                 numeroMaior = numero.getNumeroInteiro();
             }
         }
@@ -54,7 +54,7 @@ public class SomaNumeros {
         int numeroMenor = this.calcularSoma();
 
         for (Numero numero : numeroList) {
-            if (numeroMenor > numero.getNumeroInteiro()) {
+            if (numeroMenor >= numero.getNumeroInteiro()) {
                 numeroMenor = numero.getNumeroInteiro();
             }
         }

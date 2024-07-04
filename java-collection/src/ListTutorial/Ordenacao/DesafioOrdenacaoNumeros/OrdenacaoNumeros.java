@@ -1,4 +1,4 @@
-package ListTutorial.ListOrdenacao.DesafioOrdenacaoNumeros;
+package ListTutorial.Ordenacao.DesafioOrdenacaoNumeros;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -24,7 +24,7 @@ public class OrdenacaoNumeros {
      * usando a interface Comparable e a class Collections.
      */
     public List<Inteiros> ordenarAscendente() {
-        List<Inteiros> numeroAscedente = new ArrayList<>(numeroList);
+        List<Inteiros> numeroAscedente = new ArrayList<>(this.numeroList);
         Collections.sort(numeroAscedente);
         return numeroAscedente;
     }

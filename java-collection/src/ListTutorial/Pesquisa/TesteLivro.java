@@ -1,6 +1,6 @@
-package ListTutorial.Pesquisa.ListPesquisa;
+package ListTutorial.Pesquisa;
 
-public class Biblioteca {
+public class TesteLivro {
 
     public static void main(String[] args) {
         CatalogoLivros catalogo = new CatalogoLivros();

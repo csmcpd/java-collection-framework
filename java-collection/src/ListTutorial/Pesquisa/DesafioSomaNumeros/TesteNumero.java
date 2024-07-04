@@ -1,4 +1,4 @@
-package ListTutorial.Pesquisa.OperacoesPesquisaListDesafioSomaNumeros;
+package ListTutorial.Pesquisa.DesafioSomaNumeros;
 
 public class TesteNumero {
 

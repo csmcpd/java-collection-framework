@@ -1,4 +1,4 @@
-package ListTutorial.ListOrdenacao.BasicoOrdenacao;
+package ListTutorial.Ordenacao;
 
 public class Pessoa implements Comparable<Pessoa> {
 
