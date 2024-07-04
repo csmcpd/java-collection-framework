@@ -42,7 +42,7 @@ public class ConjuntoConvidados {
     private Set<Convidado> convidadoSet;
     
     public ConjuntoConvidados() {
-        this.convidadoSet = new HashSet<Convidado>();
+        this.convidadoSet = new HashSet<>();
     }
 
     /*

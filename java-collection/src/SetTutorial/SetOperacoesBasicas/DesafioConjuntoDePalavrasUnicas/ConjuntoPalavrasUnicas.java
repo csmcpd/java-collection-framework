@@ -1,4 +1,4 @@
-package SetTutorial.SetOperacoesBasicas.SetOperacoesBassicasDesafioConjuntoPalavrasUnicas;
+package SetTutorial.SetOperacoesBasicas.DesafioConjuntoDePalavrasUnicas;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -8,7 +8,7 @@ public class ConjuntoPalavrasUnicas {
     private Set<Conjunto> conjuntoSet;
 
     public ConjuntoPalavrasUnicas() {
-        this.conjuntoSet = new HashSet<Conjunto>();
+        this.conjuntoSet = new HashSet<>();
     }
 
     /*
@@ -51,7 +51,7 @@ public class ConjuntoPalavrasUnicas {
         } else {
             System.out.println("Conjunto vazio");
         }
-        
+
     }
 
     /*

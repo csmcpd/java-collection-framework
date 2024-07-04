@@ -1,6 +1,6 @@
 package SetTutorial.SetPesquisa.DesafioListaDeTarefas;
 
-public class TesteContato {
+public class TesteTarefas {
     public static void main(String[] args) {
         ListaTarefas tarefaSet = new ListaTarefas();
 
@@ -26,5 +26,9 @@ public class TesteContato {
         tarefaSet.marcarTarefaConcluida("Tarefa 10");
 
         tarefaSet.marcarTarefaPendente("Tarefa 10");
+
+        tarefaSet.limparListaTarefas();
+
+        tarefaSet.exibirTarefas();
     }
 }

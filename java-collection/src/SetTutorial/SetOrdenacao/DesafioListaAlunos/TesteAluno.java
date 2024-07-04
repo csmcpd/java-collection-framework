@@ -1,4 +1,4 @@
-package SetTutorial.SetOrdenacao.SetOrdenacaoDesafioListaAlunos;
+package SetTutorial.SetOrdenacao.DesafioListaAlunos;
 
 public class TesteAluno {
     public static void main(String[] args) {

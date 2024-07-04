@@ -19,7 +19,7 @@ public class ListaTarefas {
     }
 
     /*
-     *  Remove uma tarefa do Set de acordo com a descrição, se estiver presente.
+     * Remove uma tarefa do Set de acordo com a descrição, se estiver presente.
      */
     public void removerTarefa(String descricao) {
         Tarefa tarefaParaRemover = null;
@@ -38,7 +38,12 @@ public class ListaTarefas {
      * Exibe todas as tarefas da lista de tarefas.
      */
     public void exibirTarefas() {
-        System.out.println(tarefaSet);
+        if (!tarefaSet.isEmpty()) {
+            System.out.println(tarefaSet);
+        } else {
+            System.out.println("Tarefa esta vazia");
+        }
+        
     }
 
     /*
@@ -79,7 +84,7 @@ public class ListaTarefas {
     }
 
     /*
-     *  Marca uma tarefa como concluída de acordo com a descrição.
+     * Marca uma tarefa como concluída de acordo com a descrição.
      */
     public void marcarTarefaConcluida(String descricao) {
         if (tarefaSet.isEmpty() == false) {
@@ -93,7 +98,9 @@ public class ListaTarefas {
                         System.out.println("Tarefa já estava concluida");
                         break;
                     }
-                } else {System.out.println("Estamos procurando na lista");}
+                } else {
+                    System.out.println("Estamos procurando na lista");
+                }
             }
         } else {
             System.out.println("Lista estaq vazia");
@@ -123,12 +130,12 @@ public class ListaTarefas {
      * Remove todas as tarefas da lista de tarefas.
      */
     public void limparListaTarefas() {
-        tarefaSet = null;
 
-        if (tarefaSet.isEmpty()) {
-            System.out.println("");
+        if (!tarefaSet.isEmpty()) {
+            tarefaSet.clear();
+            System.out.println("Todas as tarefas foram removidas");
         } else {
-            System.out.println("Tarefa ainda continua cheia");
+            System.out.println("Tarefa já estava vazia");
         }
 
     }

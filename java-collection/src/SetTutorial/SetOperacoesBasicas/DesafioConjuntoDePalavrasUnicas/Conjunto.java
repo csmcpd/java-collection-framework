@@ -1,4 +1,4 @@
-package SetTutorial.SetOperacoesBasicas.SetOperacoesBassicasDesafioConjuntoPalavrasUnicas;
+package SetTutorial.SetOperacoesBasicas.DesafioConjuntoDePalavrasUnicas;
 
 import java.util.Objects;
 

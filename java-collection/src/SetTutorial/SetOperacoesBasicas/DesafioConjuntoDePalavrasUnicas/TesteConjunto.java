@@ -1,4 +1,4 @@
-package SetTutorial.SetOperacoesBasicas.SetOperacoesBassicasDesafioConjuntoPalavrasUnicas;
+package SetTutorial.SetOperacoesBasicas.DesafioConjuntoDePalavrasUnicas;
 
 public class TesteConjunto {
     public static void main(String[] args) {

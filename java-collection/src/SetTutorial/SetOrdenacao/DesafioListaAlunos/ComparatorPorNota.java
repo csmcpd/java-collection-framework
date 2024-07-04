@@ -1,4 +1,4 @@
-package SetTutorial.SetOrdenacao.SetOrdenacaoDesafioListaAlunos;
+package SetTutorial.SetOrdenacao.DesafioListaAlunos;
 
 import java.util.Comparator;
 

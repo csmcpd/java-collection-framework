@@ -1,4 +1,4 @@
-package SetTutorial.SetOrdenacao.SetOrdenacaoDesafioListaAlunos;
+package SetTutorial.SetOrdenacao.DesafioListaAlunos;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -49,9 +49,6 @@ public class GerenciadorAlunos {
         
     }
 
-    /*
-     * Exibe todos os alunos do conjunto em ordem alfabética pelo nome.
-     */
     public Set<Aluno> exibirAlunosPorNome() {
         Set<Aluno> alunoOrdemAlfabetica = new TreeSet<>(alunoSet);
         
