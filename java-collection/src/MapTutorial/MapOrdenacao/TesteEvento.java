@@ -1,4 +1,4 @@
-package MapTutorial.MapOrdenacao.AgendaEventos;
+package MapTutorial.MapOrdenacao;
 
 import java.time.LocalDate;
 import java.time.Month;

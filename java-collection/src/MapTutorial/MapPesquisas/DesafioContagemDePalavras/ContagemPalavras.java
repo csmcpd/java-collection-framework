@@ -22,8 +22,11 @@ public class ContagemPalavras {
      * Remove uma palavra da contagem, se estiver presente.
      */
     public void removerPalavra(String palavra) {
-        if (!palavraMap.isEmpty()) {
+        if (palavraMap.containsKey(palavra)) {
             palavraMap.remove(palavra);
+            System.out.println("Palavra removida do mapa com sucesso");
+        } else {
+            System.out.println("Palavra não encontrada no mapa");
         }
     }
 
@@ -35,7 +38,8 @@ public class ContagemPalavras {
     }
 
     /*
-     * Encontra a palavra mais frequente no texto e retorna a palavra e sua contagem.
+     * Encontra a palavra mais frequente no texto 
+     * e retorna a palavra e sua contagem.
      */
     public Map<String, Integer> encontrarPalavraMaisFrequente() {
         Map<String, Integer> palavraMaisFrequente = new HashMap<>();

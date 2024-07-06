@@ -1,4 +1,4 @@
-package MapTutorial.MapOrdenacao.AgendaEventos;
+package MapTutorial.MapOrdenacao;
 
 import java.time.LocalDate;
 import java.util.HashMap;
@@ -47,6 +47,23 @@ public class AgendaEventos {
                 break;
             }
         }
+
+        /*
+         * Poderia ser assim:
+         * 
+         */
+
+         /*
+          *  for (var entry : eventosTreemap.entrySet()) {
+            if (entry.getKey().isEqual(dataAtual) || entry.getKey().isAfter(dataAtual)) {
+                System.out.println("O próximo " + entry.getValue() 
+                + " acontecerá na data " + entry.getKey());
+
+                break;
+            }
+        }
+          */
+        
     }
     
 }

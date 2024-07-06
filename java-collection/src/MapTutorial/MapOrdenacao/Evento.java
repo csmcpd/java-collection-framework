@@ -1,4 +1,4 @@
-package MapTutorial.MapOrdenacao.AgendaEventos;
+package MapTutorial.MapOrdenacao;
 
 public class Evento {
 

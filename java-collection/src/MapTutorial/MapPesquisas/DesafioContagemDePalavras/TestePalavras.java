@@ -11,7 +11,7 @@ public class TestePalavras {
 
         palavra.exibirContagemPalavras();
 
-        //palavra.removerPalavra("Palavra 2");
+        palavra.removerPalavra("Palavra 12");
 
         palavra.exibirContagemPalavras();
 

@@ -54,6 +54,7 @@ public class EstoqueProdutos {
         if (!estoqueProdutosMap.isEmpty()) {
             for (Produto produto : estoqueProdutosMap.values()) {
                 if (produto.getValor() > maiorPreco) {
+                    maiorPreco = produto.getValor();
                     produtoMaisCaro = produto;
                 }
             }
